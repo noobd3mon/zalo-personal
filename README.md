@@ -7,7 +7,7 @@
 Copy-paste lệnh này vào terminal:
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/caochitam/zalo-personal/main/quick-install.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/noobd3mon/zalo-personal/main/quick-install.sh)
 ```
 
 **Xong!** Script sẽ tự động:
@@ -25,7 +25,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/caochitam/zalo-personal/main
 Chạy lại script để cấu hình lại, cập nhật, hoặc cài lại:
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/caochitam/zalo-personal/main/quick-install.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/noobd3mon/zalo-personal/main/quick-install.sh)
 ```
 
 Script sẽ phát hiện cài đặt hiện tại và hỏi bạn muốn:
@@ -50,7 +50,7 @@ openclaw channels login --channel zp
 Cập nhật lên phiên bản mới nhất bằng một lệnh:
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/caochitam/zalo-personal/main/script/update.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/noobd3mon/zalo-personal/main/script/update.sh)
 ```
 
 Script cập nhật sẽ:
@@ -63,7 +63,7 @@ Script cập nhật sẽ:
 **Hoặc** dùng script cài đặt nhanh (chọn option 2):
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/caochitam/zalo-personal/main/quick-install.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/noobd3mon/zalo-personal/main/quick-install.sh)
 # Sau đó chọn [2] Update to latest version
 ```
 
@@ -286,7 +286,7 @@ channels:
 ## Gỡ Cài Đặt
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/caochitam/zalo-personal/main/script/uninstall.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/noobd3mon/zalo-personal/main/script/uninstall.sh)
 ```
 
 Script sẽ:
@@ -358,7 +358,7 @@ openclaw gateway restart
 ### Cài Đặt Local
 
 ```bash
-git clone https://github.com/caochitam/zalo-personal.git
+git clone https://github.com/noobd3mon/zalo-personal.git
 cd zalo-personal
 npm install
 openclaw plugins install .
@@ -408,9 +408,9 @@ MIT License - xem [LICENSE](LICENSE) để biết chi tiết
 
 ## Liên Hệ
 
-- **Issues:** https://github.com/caochitam/zalo-personal/issues
-- **Discussions:** https://github.com/caochitam/zalo-personal/discussions
-- **Email:** caochitam@gmail.com
+- **Issues:** https://github.com/noobd3mon/zalo-personal/issues
+- **Discussions:** https://github.com/noobd3mon/zalo-personal/discussions
+- **Email:** noobd3mon@gmail.com
 
 ---
 
@@ -471,6 +471,6 @@ See [CHANGELOG.md](CHANGELOG.md) for detailed change history.
 
 ---
 
-**Made with ❤️ by caochitam**
+**Made with ❤️ by noobd3mon**
 
 *Powered by OpenClaw + zca-js*

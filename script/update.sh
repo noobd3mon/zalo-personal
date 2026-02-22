@@ -1,6 +1,6 @@
 #!/bin/bash
 # Zalo Personal Extension - Update Script
-# Usage: bash <(curl -fsSL https://raw.githubusercontent.com/caochitam/zalo-personal/main/script/update.sh)
+# Usage: bash <(curl -fsSL https://raw.githubusercontent.com/noobd3mon/zalo-personal/main/script/update.sh)
 
 set -e
 
@@ -30,7 +30,7 @@ if [ ! -d "$EXT_DIR" ]; then
     echo "📁 Thư mục không tồn tại: $EXT_DIR"
     echo ""
     echo "📥 Vui lòng cài đặt plugin trước:"
-    echo "   bash <(curl -fsSL https://raw.githubusercontent.com/caochitam/zalo-personal/main/quick-install.sh)"
+    echo "   bash <(curl -fsSL https://raw.githubusercontent.com/noobd3mon/zalo-personal/main/quick-install.sh)"
     exit 1
 fi
 
@@ -178,8 +178,8 @@ echo "────────────────────────�
 echo "🎉 Hoàn tất! Zalo Personal đã được cập nhật."
 echo ""
 echo "📚 Xem changelog tại:"
-echo "   https://github.com/caochitam/zalo-personal/releases"
+echo "   https://github.com/noobd3mon/zalo-personal/releases"
 echo ""
 echo "💬 Góp ý hoặc báo lỗi:"
-echo "   https://github.com/caochitam/zalo-personal/issues"
+echo "   https://github.com/noobd3mon/zalo-personal/issues"
 echo ""

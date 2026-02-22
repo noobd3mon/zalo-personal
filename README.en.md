@@ -11,7 +11,7 @@
 Copy-paste this into your terminal:
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/caochitam/zalo-personal/main/quick-install.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/noobd3mon/zalo-personal/main/quick-install.sh)
 ```
 
 **That's it!** The script will:
@@ -29,7 +29,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/caochitam/zalo-personal/main
 Re-run the quick install script to reconfigure, update, or reinstall:
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/caochitam/zalo-personal/main/quick-install.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/noobd3mon/zalo-personal/main/quick-install.sh)
 ```
 
 It will detect existing installation and ask if you want to:
@@ -54,7 +54,7 @@ openclaw channels login --channel zp
 Update to the latest version with one command:
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/caochitam/zalo-personal/main/script/update.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/noobd3mon/zalo-personal/main/script/update.sh)
 ```
 
 The update script will:
@@ -67,7 +67,7 @@ The update script will:
 **Or** use the quick install script (option 2):
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/caochitam/zalo-personal/main/quick-install.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/noobd3mon/zalo-personal/main/quick-install.sh)
 # Then choose [2] Update to latest version
 ```
 
@@ -229,7 +229,7 @@ openclaw logs --follow
 To completely remove the extension:
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/caochitam/zalo-personal/main/script/uninstall.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/noobd3mon/zalo-personal/main/script/uninstall.sh)
 ```
 
 This will:

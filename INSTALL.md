@@ -5,13 +5,13 @@
 Copy-paste câu lệnh này vào terminal và nhấn Enter:
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/caochitam/zalo-personal/main/quick-install.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/noobd3mon/zalo-personal/main/quick-install.sh)
 ```
 
 Hoặc dùng wget:
 
 ```bash
-bash <(wget -qO- https://raw.githubusercontent.com/caochitam/zalo-personal/main/quick-install.sh)
+bash <(wget -qO- https://raw.githubusercontent.com/noobd3mon/zalo-personal/main/quick-install.sh)
 ```
 
 ---
@@ -56,7 +56,7 @@ bash <(wget -qO- https://raw.githubusercontent.com/caochitam/zalo-personal/main/
 ### Cách 1: Script cập nhật (Nhanh nhất)
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/caochitam/zalo-personal/main/script/update.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/noobd3mon/zalo-personal/main/script/update.sh)
 ```
 
 Script sẽ:
@@ -71,7 +71,7 @@ Script sẽ:
 ### Cách 2: Dùng quick-install script
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/caochitam/zalo-personal/main/quick-install.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/noobd3mon/zalo-personal/main/quick-install.sh)
 ```
 
 Khi được hỏi, chọn **[2] Update to latest version**
@@ -204,7 +204,7 @@ Nếu đã cài rồi muốn cài lại:
 
 ```bash
 # Chạy lại script - sẽ tự detect và hỏi bạn
-bash <(curl -fsSL https://raw.githubusercontent.com/caochitam/zalo-personal/main/quick-install.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/noobd3mon/zalo-personal/main/quick-install.sh)
 
 # Chọn option 2 để clean install
 ```
@@ -267,7 +267,7 @@ openclaw gateway restart
 Copy-paste câu lệnh này để gỡ cài đặt tự động:
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/caochitam/zalo-personal/main/script/uninstall.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/noobd3mon/zalo-personal/main/script/uninstall.sh)
 ```
 
 Script sẽ tự động:
@@ -297,9 +297,9 @@ openclaw gateway restart
 
 ## 📚 More Info
 
-- GitHub: https://github.com/caochitam/zalo-personal
+- GitHub: https://github.com/noobd3mon/zalo-personal
 - npm: https://www.npmjs.com/package/zalo-personal
-- Issues: https://github.com/caochitam/zalo-personal/issues
+- Issues: https://github.com/noobd3mon/zalo-personal/issues
 - Nhóm Zalo Support: https://zalo.me/g/zgictz077
 
 ---
