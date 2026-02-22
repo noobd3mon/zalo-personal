@@ -204,7 +204,7 @@ if [ "$ALREADY_INSTALLED" = false ] || [ "$choice" = "2" ]; then
     export NPM_CONFIG_LOGLEVEL=info
 
     # Run install command and show output
-    openclaw plugins install zalo-personal 2>&1
+    openclaw plugins install github:noobd3mon/zalo-personal 2>&1
 
     INSTALL_EXIT_CODE=$?
     echo ""
