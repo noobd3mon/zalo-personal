@@ -19,13 +19,18 @@ const plugin = {
       name: "zalo-personal",
       label: "Zalo Personal",
       description:
-        "Send messages and manage Zalo personal account (zca-js). " +
-        "Messaging: send (text), image (image URL), link (send link). " +
-        "Info: friends (list/search), groups (list), me (profile), status (auth). " +
-        "Blocklist: block-user (global block), unblock-user (global unblock), " +
-        "block-user-in-group (block in specific group), unblock-user-in-group (unblock in group), " +
-        "list-blocked (show blocked users), list-allowed (show allowed users). " +
-        "Names are auto-resolved to IDs. Gateway restart required after blocklist changes.",
+        "Full Zalo personal account management (zca-js). " +
+        "MESSAGING: send (text), image (URL), link, send-sticker, send-reaction, forward-message, delete-message, undo-message, send-card, send-typing-event. " +
+        "FRIENDS: friends (list/search), find-user (phone), find-user-by-username, get-user-info, send-friend-request, accept-friend-request, reject-friend-request, undo-friend-request, remove-friend, change-friend-alias, remove-friend-alias, get-friend-onlines, block-view-feed. " +
+        "GROUPS: groups (list), get-group-info, get-group-members, create-group, add-user-to-group, remove-user-from-group, change-group-name, change-group-owner, add-group-deputy, remove-group-deputy, leave-group, disperse-group, update-group-settings, add-group-blocked-member, remove-group-blocked-member, get-group-blocked-member. " +
+        "STICKERS: search-stickers, get-sticker-detail, get-sticker-category. " +
+        "POLLS: create-poll, vote-poll, lock-poll, get-poll-detail. " +
+        "PROFILE: me (info), update-profile, update-profile-bio, change-avatar, status. " +
+        "CONVERSATIONS: set-mute, pin-conversation, archive-conversation, delete-chat. " +
+        "LABELS: get-labels, update-labels, get-quick-messages, add-quick-message, remove-quick-message. " +
+        "BLOCKLIST: block-user, unblock-user, block-user-in-group, unblock-user-in-group, list-blocked, list-allowed. " +
+        "MISC: keep-alive, parse-link, last-online, get-alias-list, block-user-zalo, unblock-user-zalo. " +
+        "Names are auto-resolved to IDs.",
       parameters: ZaloPersonalToolSchema,
       execute: executeZaloPersonalTool,
     } as AnyAgentTool);
