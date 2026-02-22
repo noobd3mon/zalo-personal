@@ -187,34 +187,57 @@ fi
 # Install plugin (if not using existing)
 if [ "$ALREADY_INSTALLED" = false ] || [ "$choice" = "2" ]; then
     echo "📦 Đang cài đặt extension zalo-personal..."
-    echo "⚠️  Có thể xuất hiện warning về 'dangerous code patterns' - điều này bình thường"
-    echo "    (Extension cần quyền restart gateway)"
     echo ""
     echo "─────────────────────────────────────────────────────────────"
-    echo "📥 Installing plugin and dependencies..."
-    echo ""
-    echo "📦 Dependencies sẽ được cài:"
-    echo "   • zca-js (Zalo library)"
-    echo "   • qrcode-terminal (QR display)"
-    echo "   • pngjs, jsqr (Image processing)"
-    echo "   • zod, @sinclair/typebox (Validation)"
+    echo "📥 Cloning từ GitHub và cài dependencies..."
     echo ""
 
-    # Set npm to show more output
-    export NPM_CONFIG_LOGLEVEL=info
+    EXT_DIR="$HOME/.openclaw/extensions/zalo-personal"
 
-    # Run install command and show output
-    openclaw plugins install github:noobd3mon/zalo-personal 2>&1
+    # Clone repo from GitHub
+    echo "📥 Cloning repo..."
+    mkdir -p "$HOME/.openclaw/extensions"
+    if [ -d "$EXT_DIR" ]; then
+        rm -rf "$EXT_DIR"
+    fi
+    git clone https://github.com/noobd3mon/zalo-personal.git "$EXT_DIR" 2>&1
+
+    if [ $? -ne 0 ]; then
+        echo "❌ Clone thất bại!"
+        echo ""
+        echo "🔍 Có thể thử:"
+        echo "  1. Kiểm tra internet connection"
+        echo "  2. Kiểm tra repo: https://github.com/noobd3mon/zalo-personal"
+        exit 1
+    fi
+    echo "✅ Clone thành công!"
+    echo ""
+
+    # Install dependencies
+    echo "📦 Installing dependencies..."
+    cd "$EXT_DIR"
+    npm install --production 2>&1
+
+    if [ $? -ne 0 ]; then
+        echo "❌ npm install thất bại!"
+        exit 1
+    fi
+    echo ""
+
+    # Register plugin with OpenClaw
+    echo "🔧 Registering plugin..."
+    cd "$HOME"
+    openclaw plugins install "$EXT_DIR" 2>&1
 
     INSTALL_EXIT_CODE=$?
     echo ""
     echo "─────────────────────────────────────────────────────────────"
 
     # Show installed packages
-    if [ $INSTALL_EXIT_CODE -eq 0 ] && [ -d "$HOME/.openclaw/extensions/zalo-personal/node_modules" ]; then
+    if [ $INSTALL_EXIT_CODE -eq 0 ] && [ -d "$EXT_DIR/node_modules" ]; then
         echo ""
         echo "✅ Đã cài đặt các dependencies:"
-        ls -1 "$HOME/.openclaw/extensions/zalo-personal/node_modules" | grep -E "^(zca-js|qrcode|pngjs|jsqr|zod|typebox)" | sed 's/^/   ✓ /'
+        ls -1 "$EXT_DIR/node_modules" | grep -E "^(zca-js|qrcode|pngjs|jsqr|zod|typebox)" | sed 's/^/   ✓ /'
         echo ""
     fi
     echo ""
